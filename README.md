@@ -1,9 +1,22 @@
 ﻿# 📊 新版商品详情页 A/B 实验分析
 
-电商 APP 新版商品详情页上线前 A/B 实验全流程分析。
+电商 APP 新版商品详情页上线前 A/B 实验全流程分析。包含分层随机化、SRM 检查、Z 检验、BH 多重检验校正、CUPED 方差削减、HTE 异质性分析、序贯检验。
 
-## 目录结构
+## 产出物
 
-- docs/experiment_design.md — 实验设计文档
-- b_testing_code/day7_ab_experiment.py — 完整实验代码（即将添加）
-- i_dashboard/dashboard.html — 交互式仪表盘（即将添加）
+| 文件 | 说明 |
+|------|------|
+| bi_dashboard/dashboard.html | 交互式 BI 仪表盘（Plotly） |
+| ab_testing_code/day7_ab_experiment.py | 完整实验代码，np.random.seed(2000) |
+| docs/experiment_design.md | 实验设计文档 |
+
+## 快速开始
+
+python ab_testing_code/day7_ab_experiment.py
+
+## 核心结果
+
+| 指标 | 对照组 A | 实验组 B | 提升 | 统计量 | p 值 |
+|------|----------|----------|------|--------|------|
+| 转化率 | 5.89% | 6.26% | +0.37pp (+6.2%) | Z=2.434 | 0.0149 |
+| SRM 卡方 | — | — | — | χ²=0.027 | 0.869 |
