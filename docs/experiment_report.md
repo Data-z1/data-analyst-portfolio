@@ -180,7 +180,3 @@ np.random.seed(2000)
 ```
 
 代码、仪表盘、本报告所有数值均由同一 seed=2000 生成，`python ab_testing_code/product_detail_ab_test.py` 即可复现全部结果。
-
----
-
-*报告生成时间：2026-11-07 | Data-z1*
