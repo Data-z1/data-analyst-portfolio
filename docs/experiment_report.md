@@ -1,4 +1,4 @@
-# 📊 新版商品详情页 A/B 实验分析报告
+﻿# 📊 新版商品详情页 A/B 实验分析报告
 
 > 实验期：2026-10-01 至 2026-10-14 | 分层随机化 | N=100,000 | α=0.05
 
@@ -179,7 +179,7 @@ conv = β₀ + β₁·B + β₂·is_old + β₃·(B × is_old) + ε
 np.random.seed(2000)
 ```
 
-代码、仪表盘、本报告所有数值均由同一 seed=2000 生成，`python ab_testing_code/day7_ab_experiment.py` 即可复现全部结果。
+代码、仪表盘、本报告所有数值均由同一 seed=2000 生成，`python ab_testing_code/product_detail_ab_test.py` 即可复现全部结果。
 
 ---
 

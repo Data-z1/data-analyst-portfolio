@@ -1,4 +1,4 @@
-# 📊 新版商品详情页 A/B 实验分析
+﻿# 📊 新版商品详情页 A/B 实验分析
 
 电商 APP 新版商品详情页上线前 A/B 实验全流程分析，包含分层随机化、SRM 检查、Z 检验、BH 多重检验校正、CUPED 方差削减、HTE 异质性分析、序贯检验。
 
@@ -7,7 +7,7 @@
 | 文件 | 说明 |
 |------|------|
 | [bi_dashboard/dashboard.html](bi_dashboard/dashboard.html) | 交互式 BI 仪表盘（Plotly），双击浏览器打开 |
-| [ab_testing_code/day7_ab_experiment.py](ab_testing_code/day7_ab_experiment.py) | 完整实验代码，`np.random.seed(2000)` 结果可复现 |
+| [ab_testing_code/product_detail_ab_test.py](ab_testing_code/product_detail_ab_test.py) | 完整实验代码，`np.random.seed(2000)` 结果可复现 |
 | [docs/experiment_report.md](docs/experiment_report.md) | 完整分析报告（含 HTE、CUPED 推导） |
 | [docs/experiment_design.md](docs/experiment_design.md) | 实验设计文档与预注册方案 |
 
@@ -18,7 +18,7 @@
 双击 bi_dashboard/dashboard.html
 
 # 2. 跑代码（结果与仪表盘、报告完全一致）
-python ab_testing_code/day7_ab_experiment.py
+python ab_testing_code/product_detail_ab_test.py
 ```
 
 ## 📈 核心结果
@@ -40,7 +40,7 @@ python ab_testing_code/day7_ab_experiment.py
 
 ## 🔒 可重复性
 
-`day7_ab_experiment.py` 使用 `np.random.seed(2000)`，仪表盘和报告用同一 seed 生成。**所有数值都由脚本自动输出**。
+`product_detail_ab_test.py` 使用 `np.random.seed(2000)`，仪表盘和报告用同一 seed 生成。**所有数值都由脚本自动输出**。
 
 ## 🛠️ 技术栈
 
